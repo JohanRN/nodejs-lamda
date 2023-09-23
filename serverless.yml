@@ -1,0 +1,13 @@
+service: nodejs-lambda
+provider:
+  name: aws
+  runtime: nodejs18.x
+functions:
+  api:
+    handler: src/index.handler
+    events:
+      - http:
+          path: /{proxy+}
+          method: ANY
+plugins:
+  - serverless-offline
