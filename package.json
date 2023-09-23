@@ -6,7 +6,8 @@
   "scripts": {
     "test": "jest ",
     "start": "node src/index.js",
-    "dev": "sls offline"
+    "dev": "sls offline",
+    "deplot": "serverless deploy"
   },
   "jest": {
     "testEnvironment": "node",
